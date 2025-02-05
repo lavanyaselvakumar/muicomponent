@@ -12,7 +12,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
-import { ExpandMore, MarginTwoTone } from '@mui/icons-material';
+import { ExpandLess, ExpandMore, MarginTwoTone } from '@mui/icons-material';
 import { timelineItemClasses } from '@mui/lab/TimelineItem';
 
 function TabPanel({ children, value, index }) {
@@ -47,7 +47,7 @@ export default function DataTable() {
       <TabPanel value={activeTab} index={0}>
         <Grid container spacing={2}>
           <Grid item xs={8}>
-            <Box sx={{ backgroundColor: "white", width: "93%", height: "300px",p:3}}>
+            <Box sx={{ backgroundColor: "white", width: "93%", height: "250px",p:3,marginBottom:"40px",marginRight:"20px"}}>
               <Typography variant="h5" sx={{ mb: 2 }}>Section Heading</Typography>
               <Grid container spacing={2}>
                 <Grid item xs={6}>
@@ -56,6 +56,7 @@ export default function DataTable() {
                     label="Email*"
                     placeholder="value@gmail.com"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "35ch" }}
                     InputProps={{
@@ -76,6 +77,7 @@ export default function DataTable() {
                     label="Phone Number*"
                     placeholder="414 414 414"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "35ch" }}
                     InputProps={{
@@ -91,13 +93,14 @@ export default function DataTable() {
                   />
                 </Grid>
               </Grid>
-              <Grid container spacing={2} sx={{ mt: 0 }} >
+              <Grid container spacing={2} sx={{ mt: -1 }} >
                 <Grid item xs={6}>
                   <TextField
                     disabled={emailEdit}
                     label="State*"
                     placeholder="TamilNadu"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "35ch" }}
                     InputProps={{
@@ -118,6 +121,7 @@ export default function DataTable() {
                     label="Zipcode*"
                     placeholder="414 414 414"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "35ch" }}
                     InputProps={{
@@ -133,13 +137,14 @@ export default function DataTable() {
                   />
                 </Grid>
               </Grid>
-              <Grid container sx={{mt:5}} >
+              <Grid container sx={{mt:2}} >
                 <Grid item xs={6}>
                 <TextField
                     disabled={phoneEdit}
                     label="Bio*"
-                    placeholder="414 414 414"
+                    placeholder="She is a good girl She is a good girl She is a good girl She is a good girl She is a good gurl Sha is a good girl She is a good gurl"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "76ch" }}
                     InputProps={{
@@ -158,7 +163,7 @@ export default function DataTable() {
               </Grid>
             </Box>
 
-            <Box sx={{ backgroundColor: "white", width: "93%", height: "250px", p: 3,mt:3 }}>
+            <Box sx={{ backgroundColor: "white", width: "93%", height: "250px", p: 3,pt:3,mt:-2}}>
               <Typography variant="h5" sx={{ mb: 2 }}>Typography</Typography>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
@@ -167,6 +172,7 @@ export default function DataTable() {
                     label="Cardnumber*"
                     placeholder="value@gmail.com"
                     variant="standard"
+                    size='"small'
                     fullWidth
                     sx={{ width: "75ch" }}
                     InputProps={{
@@ -190,6 +196,7 @@ export default function DataTable() {
                     label="Cardholdername*"
                     placeholder="TamilNadu"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "75ch" }}
                     InputProps={{
@@ -213,6 +220,7 @@ export default function DataTable() {
                     label="MM/YY*"
                     placeholder="414 414 414"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "35ch" }}
                     InputProps={{
@@ -233,6 +241,7 @@ export default function DataTable() {
                     label="CVC/CV2*"
                     placeholder="414 414 414"
                     variant="standard"
+                    size="small"
                     fullWidth
                     sx={{ width: "35ch" }}
                     InputProps={{
@@ -252,11 +261,11 @@ export default function DataTable() {
                </Grid>
 
           <Grid item xs={4} >
-            <Box sx={{ backgroundColor: "white", width: "100%", height: "450px" }}>
+            <Box sx={{ backgroundColor: "white", width: "100%", height: "450px"}}>
               <Typography variant='h5' sx={{ padding: "20px" }}>Timeline</Typography>
               <hr style={{ border: "1px solid black", margin: "0 20px" }} />
               <Accordion defaultExpanded sx={{marginTop:"20px",marginLeft:"30px",marginRight:"20px"}}>
-                <AccordionSummary expandIcon={<ExpandMore sx={{ color: '#fff' }} />} sx={{ color: '#fff', backgroundColor: '#1976D2' }}>
+                <AccordionSummary expandIcon={<ExpandMore sx={{ color: '#fff' }} />} sx={{ color: '#fff', backgroundColor: '#1976D2', padding:-30,}}>
                   <Typography component="span">Upcoming & Overdue</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -298,7 +307,7 @@ export default function DataTable() {
               </Accordion>
 
               <Accordion defaultExpanded sx={{marginTop:"20px",marginLeft:"30px",marginRight:"20px"}}>
-                <AccordionSummary expandIcon={<ExpandMore sx={{ color: '#fff' }} />} sx={{ color: '#fff', backgroundColor: '#1976D2' }}>
+                <AccordionSummary expandIcon={<ExpandLess sx={{ color: '#fff' }} />} sx={{ color: '#fff', backgroundColor: '#1976D2',padding:-20 }}>
                   <Typography component="span">Completed</Typography>
                 </AccordionSummary>
                 <AccordionDetails>

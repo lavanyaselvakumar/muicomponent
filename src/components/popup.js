@@ -122,7 +122,7 @@ const Popup = ({ closePopup }) => {
               label="Bio*"
               id="outlined-size-small"
               defaultValue="She is a very good girl she is a very good girl she is a very good girl she is a very good girl lorem y good girl she is a very good girl she is a very good girl she is a very good gi"
-              size="normal"
+              size="large"
               fullWidth
               sx={{ width: "119ch" }}
               InputProps={{

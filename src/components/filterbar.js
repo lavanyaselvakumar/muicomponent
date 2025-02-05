@@ -29,12 +29,16 @@ const Filterbar = () => {
             }}
         >
             <Box flex={1} />
+     
             
-            <Box flex={1} sx={{ display: 'flex', justifyContent: 'flex-start', paddingRight: '500px' }}>
-                {/* <h2 style={{ color: 'light black' }}>Senior Manager</h2> */}
-                <Typography variant="h5" sx={{ mb: 1,alignSelf: "flex-start",ml: 0,textAlign: "left" }}>Senior Manager</Typography>
+            {/* <Box flex={1} sx={{ display: 'flex', justifyContent: 'start', alignItems: 'start' }}>
+    <Typography variant="h5" sx={{ mb: 1 }}>Senior Manager</Typography>
+</Box> */}
+<Box flex={1} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+    <Typography variant="h5" sx={{ mb: 1 }}>Senior Manager</Typography>
+</Box>
 
-            </Box>
+
 
             <ButtonGroup
                 variant="contained"
